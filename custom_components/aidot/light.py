@@ -77,7 +77,7 @@ class AidotLight(LightEntity):
         #if self.device_client.info.enable_cct:
         supported_color_modes.add(ColorMode.COLOR_TEMP)
 
-        i#f not supported_color_modes:
+        #if not supported_color_modes:
         supported_color_modes.add(ColorMode.ONOFF)
             #if self.device_client.info.enable_dimming:
         supported_color_modes.add(ColorMode.BRIGHTNESS)
