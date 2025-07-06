@@ -71,16 +71,16 @@ class AidotLight(LightEntity):
         )
 
         supported_color_modes = set()
-        if self.device_client.info.enable_rgbw:
-            supported_color_modes.add(ColorMode.RGBW)
+        #if self.device_client.info.enable_rgbw:
+        supported_color_modes.add(ColorMode.RGBW)
 
-        if self.device_client.info.enable_cct:
-            supported_color_modes.add(ColorMode.COLOR_TEMP)
+        #if self.device_client.info.enable_cct:
+        supported_color_modes.add(ColorMode.COLOR_TEMP)
 
-        if not supported_color_modes:
-            supported_color_modes.add(ColorMode.ONOFF)
-            if self.device_client.info.enable_dimming:
-                supported_color_modes.add(ColorMode.BRIGHTNESS)
+        i#f not supported_color_modes:
+        supported_color_modes.add(ColorMode.ONOFF)
+            #if self.device_client.info.enable_dimming:
+        supported_color_modes.add(ColorMode.BRIGHTNESS)
 
         self._attr_supported_color_modes = supported_color_modes
 
