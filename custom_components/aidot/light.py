@@ -135,6 +135,7 @@ class AidotLight(LightEntity):
     @property
     def min_color_temp_kelvin(self) -> int:
         """Return the warmest color_temp_kelvin that this light supports."""
+        _logger.critical("%s", self.device_client)
         return self.device_client.info.cct_min
 
     @property
